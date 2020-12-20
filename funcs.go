@@ -14,7 +14,6 @@ func vote(x int, y int, z int) int {
 		}
 	}
 
-
 	if positiveVotes > negativeVotes {
 		return 1
 	}
@@ -30,13 +29,13 @@ func fibonacci(n int) int {
 		if i == 0 || i == 1 {
 			numbers[i] = f
 		} else {
-			numbers[i] = numbers[i - 2] + numbers[i - 1]
+			numbers[i] = numbers[i-2] + numbers[i-1]
 		}
 	}
-	return numbers[n - 1]
+	return numbers[n-1]
 }
 
-func sumInt(a ...int) (int, int){
+func sumInt(a ...int) (int, int) {
 	count := 0
 	sum := 0
 	for _, elem := range a {
@@ -48,8 +47,8 @@ func sumInt(a ...int) (int, int){
 
 func main() {
 	// fmt.Println(vote(0,0,1))
-	//fmt.Println(fibonacci(10))
-	a, b := sumInt(1, 0,3,4)
-	fmt.Print(a,b)
+	// fmt.Println(fibonacci(10))
+	a, b := sumInt(1, 0, 3, 4)
+	fmt.Print(a, b)
 
 }
